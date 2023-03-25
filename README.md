@@ -1,6 +1,21 @@
-# oodles
+# oodles Assesment
 Auth and CRUD API's
 
+#### RUN Project
+###### 1. Clone the project
+```git clone https://github.com/rock12231/oodles.git```
+###### 2. Create a virtual environment
+```python -m venv venv```
+###### 3. Activate the virtual environment
+```venv\Scripts\activate```
+###### 4. Install the requirements
+```pip install -r requirements.txt```
+###### 5. Run the server
+```python manage.py runserver```
+
+<br>
+<br>
+<br>
 
 #### GET
 ###### Get all designs
@@ -53,6 +68,8 @@ Auth and CRUD API's
 ] 
   ```
 
+<br>
+
 #### POST
 ###### Create a design
 ###### API ```http://127.0.0.1:8000/api/register```
@@ -76,6 +93,8 @@ Auth and CRUD API's
     "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5NzU2MDUwLCJpYXQiOjE2Nzk3NTU3NTAsImp0aSI6ImQyNjcyODhlODRmYTQxYWRiNGIzODc3MjM2MjI5NWU1IiwidXNlcl9pZCI6NH0.ZRrSzIDlUqABI8i0n9prnlC9RXU1dJa6mPwgup3mlok"
 }
  ```
+
+<br>
 
 #### PUT
 ###### Update a design
@@ -106,6 +125,8 @@ Auth and CRUD API's
   "user": 1
 }
  ```
+
+<br>
 
 #### DELETE
 ###### Delete a design
