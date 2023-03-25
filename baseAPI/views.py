@@ -26,6 +26,7 @@ class RegistrationView(APIView):
             data = serializer.errors
         return Response(data)
 
+
 class LogoutView(APIView):
     authentication_class = [JWTAuthentication]
     permission_classes = [IsAuthenticated]
@@ -39,6 +40,7 @@ class LogoutView(APIView):
             return Response(status=status.HTTP_205_RESET_CONTENT)
         except Exception as e:
             return Response(status=status.HTTP_400_BAD_REQUEST)
+
 
 class DesignDetail(APIView):
     authentication_class = [JWTAuthentication]
@@ -75,7 +77,6 @@ class DesignDetail(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
                         
             
-    
 class DesignList(APIView):
     authentication_class = [JWTAuthentication]
     permission_classes = [IsAuthenticated]
