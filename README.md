@@ -119,11 +119,12 @@ Auth and CRUD API's
 
 ```json  
 {
-    "email": "user1@gmail.com",
-    "username": "user1",
-    "password": "user1",
-    "first_name": "user1",
-    "last_name": "user1"
+  "title": "color",
+  "description": "description",
+  "creator": "oodals",
+  "price": 1000,
+  "tags": "#green",
+  "user": 1
 }
   ```
 
