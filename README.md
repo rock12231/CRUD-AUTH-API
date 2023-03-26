@@ -15,6 +15,50 @@ Auth and CRUD API's
 
 <br>
 <br>
+
+## Authentication & API's
+#### POST
+###### Login
+###### API ```http://127.0.0.1:8000/api/token/```
+```json
+{
+    "email": "user1@gmail.com",
+    "password": "user1"
+}
+ ```
+###### Out put
+
+```json
+{
+  "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY3OTg0MjMyMSwiaWF0IjoxNjc5NzU1OTIxLCJqdGkiOiJkN2JlZWM4MThjYzY0ZTU5OTFlMWY3NzQzYWY2NDFhMiIsInVzZXJfaWQiOjN9.rhTvXyRqaOPdHdrUlbgypkXO0uk-Hv5IE1604QkSuxQ",
+  "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5NzU2MjIxLCJpYXQiOjE2Nzk3NTU5MjEsImp0aSI6Ijc5ZThkZmM3OTJlMTQyYzRiYTA3OGIxYmRiZjliY2MyIiwidXNlcl9pZCI6M30.XFTQQHuWAHVQq2vqE80bVS9w3AH-ll_iahdfQf6Hmek"
+}
+```
+#### POST
+###### Create a User (Register)
+###### API ```http://127.0.0.1:8000/api/register/```
+
+```json  
+{
+    "email": "user1@gmail.com",
+    "username": "user1",
+    "password": "user1",
+    "first_name": "user1",
+    "last_name": "user1"
+}
+  ```
+
+###### Out put
+```json
+{
+    "response": "Successfully registered a new user.",
+    "email": "user1@gmail.com",
+    "username": "user1",
+    "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY3OTg0MjE1MCwiaWF0IjoxNjc5NzU1NzUwLCJqdGkiOiI4NzVlOWM3YjVhNTI0NGM5OTQwNDg5Yjk3Y2ZiYWU3NCIsInVzZXJfaWQiOjR9.TA-EnzA8_RhzncMNKmQl9NQj8pNRz9PxJ3GFKEbyqes",
+    "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5NzU2MDUwLCJpYXQiOjE2Nzk3NTU3NTAsImp0aSI6ImQyNjcyODhlODRmYTQxYWRiNGIzODc3MjM2MjI5NWU1IiwidXNlcl9pZCI6NH0.ZRrSzIDlUqABI8i0n9prnlC9RXU1dJa6mPwgup3mlok"
+}
+ ```
+
 <br>
 
 #### GET
@@ -48,7 +92,6 @@ Auth and CRUD API's
 ] 
   ```
 
-
 ###### Get one designs
 ###### API ```http://127.0.0.1:8000/api/designs/1```
 ###### Out put
@@ -69,10 +112,9 @@ Auth and CRUD API's
   ```
 
 <br>
-
 #### POST
 ###### Create a design
-###### API ```http://127.0.0.1:8000/api/register```
+###### API ```http://127.0.0.1:8000/api/designs```
 
 ```json  
 {
@@ -83,16 +125,6 @@ Auth and CRUD API's
     "last_name": "user1"
 }
   ```
-###### Out put
-```json
-{
-    "response": "Successfully registered a new user.",
-    "email": "user1@gmail.com",
-    "username": "user1",
-    "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY3OTg0MjE1MCwiaWF0IjoxNjc5NzU1NzUwLCJqdGkiOiI4NzVlOWM3YjVhNTI0NGM5OTQwNDg5Yjk3Y2ZiYWU3NCIsInVzZXJfaWQiOjR9.TA-EnzA8_RhzncMNKmQl9NQj8pNRz9PxJ3GFKEbyqes",
-    "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5NzU2MDUwLCJpYXQiOjE2Nzk3NTU3NTAsImp0aSI6ImQyNjcyODhlODRmYTQxYWRiNGIzODc3MjM2MjI5NWU1IiwidXNlcl9pZCI6NH0.ZRrSzIDlUqABI8i0n9prnlC9RXU1dJa6mPwgup3mlok"
-}
- ```
 
 <br>
 

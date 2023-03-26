@@ -4,6 +4,6 @@ urlpatterns = [
     path('alldesigns', DesignList.as_view()),
     path('designs', DesignDetail.as_view()),
     path('designs/<int:id>', DesignDetail.as_view()),
-    # path('designs/<int:id>', DesignList.as_view()),
     path('register', RegistrationView.as_view()),
+    path('logout', LogoutView.as_view()),
 ]
