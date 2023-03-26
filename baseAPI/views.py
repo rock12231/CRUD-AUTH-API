@@ -41,7 +41,7 @@ class LogoutView(APIView):
         except Exception as e:
             return Response(status=status.HTTP_400_BAD_REQUEST)
 
-
+# Design Detail class
 class DesignDetail(APIView):
     authentication_class = [JWTAuthentication]
     permission_classes = [IsAuthenticated]
@@ -76,7 +76,7 @@ class DesignDetail(APIView):
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
                         
-# Designs class      
+# Designs List class      
 class DesignList(APIView):
     authentication_class = [JWTAuthentication]
     permission_classes = [IsAuthenticated]

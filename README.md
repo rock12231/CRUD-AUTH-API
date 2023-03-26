@@ -127,6 +127,21 @@ Auth and CRUD API's
   "user": 1
 }
   ```
+###### Out put	
+
+```json  
+{
+  "id": 3,
+  "title": "title",
+  "description": "description",
+  "creator": "creater",
+  "price": 100,
+  "creation_date": "2023-03-26",
+  "last_update_date": "2023-03-26",
+  "tags": "#check color",
+  "user": 3
+}
+ ```
 
 <br>
 
