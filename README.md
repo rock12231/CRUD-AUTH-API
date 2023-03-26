@@ -34,6 +34,10 @@ Auth and CRUD API's
   "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5NzU2MjIxLCJpYXQiOjE2Nzk3NTU5MjEsImp0aSI6Ijc5ZThkZmM3OTJlMTQyYzRiYTA3OGIxYmRiZjliY2MyIiwidXNlcl9pZCI6M30.XFTQQHuWAHVQq2vqE80bVS9w3AH-ll_iahdfQf6Hmek"
 }
 ```
+<p align="center">
+<a href="https://github.com/rock12231/oodles/blob/master/Screenshorts/login.png"><img src="https://github.com/rock12231/oodles/blob/master/Screenshorts/login.png" alt="IMG"></a>
+</p>
+
 #### POST
 ###### Create a User (Register)
 ###### API ```http://127.0.0.1:8000/api/register/```
