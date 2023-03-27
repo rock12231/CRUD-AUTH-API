@@ -1,5 +1,4 @@
-# oodles Assesment
-Auth and CRUD API's
+## Auth and CRUD API's
 
 #### RUN Project
 ###### 1. Clone the project
