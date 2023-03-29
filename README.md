@@ -21,8 +21,8 @@
 ###### API ```http://127.0.0.1:8000/api/token/```
 ```json
 {
-    "email": "user1@gmail.com",
-    "password": "user1"
+    "email": "admin@gmail.com",
+    "password": "admin"
 }
  ```
 ###### Out put
